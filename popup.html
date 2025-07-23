@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Link Saver</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 320px; }
+    .input-row { display: flex; align-items: center; gap: 5px; }
+    input { flex: 1; padding: 5px; }
+    button { background: none; border: none; cursor: pointer; font-size: 16px; }
+    .save-btn { display: flex; align-items: center; gap: 4px; }
+    .link-list { margin-top: 10px; }
+    .link-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+    .delete-btn { color: #c00; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h3>Save This Link</h3>
+  <div class="input-row">
+    <input type="text" id="title" placeholder="Title (press Enter to save)" />
+    <button id="saveBtn" class="save-btn" aria-label="Save link">
+      <span>💾</span><span>Save</span>
+    </button>
+  </div>
+  <h4>Saved Links</h4>
+  <div id="links" class="link-list"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
